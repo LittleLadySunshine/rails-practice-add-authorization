@@ -1,5 +1,7 @@
 class SessionsController < ApplicationController
 
+  skip_before_action :logged_in?
+
   def new
     @student = Student.new
   end

@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    <% @clubs.each do |club| %>
+    <% current_student.clubs.each do |club| %>
     <tr>
       <td>
         <%= link_to club.name, club %>
